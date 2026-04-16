@@ -50,7 +50,7 @@ const openapi = fromHono(app, {
 	docs_url: null,
 	schema: {
 		info: {
-			title: "XServer API(非公式)",
+			title: "XServer API (非公式)",
 			version: "1.0.0",
 		},
 		servers: [
