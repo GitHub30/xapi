@@ -2,6 +2,7 @@
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/GitHub30/xapi)
 
+Demo https://xapi.ix.workers.dev
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1d54803f-8b05-4d88-8216-312704d72ff2" />
 
 検証テスト環境としてお使いください
