@@ -36,7 +36,7 @@ app.get("/", (c) => {
 		.replace("<title>SwaggerUI</title>", "<title>XServer API</title>")
 		.replace(
 			"</head>",
-			`<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></head>`,
+			`<meta property="og:title" content="XServer API"><meta property="og:description" content="XServer API(非公式)のモックとドキュメント"><meta property="og:type" content="website"><meta property="og:image" content="https://i.imgur.com/tx1Ro7f.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://i.imgur.com/tx1Ro7f.png"><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></head>`,
 		)
 		.replace(
 			"<body>",
