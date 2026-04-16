@@ -59,7 +59,7 @@ const openapi = fromHono(app, {
 				description: "XServer API 本番",
 				variables: {
 					servername: {
-						default: "xs123456",
+						default: "xs999999.xsrv.jp",
 						description: "サーバー名",
 					},
 				},
@@ -69,7 +69,7 @@ const openapi = fromHono(app, {
 				description: "XServer API モックサーバー",
 				variables: {
 					servername: {
-						default: "xs123456",
+						default: "xs999999.xsrv.jp",
 						description: "サーバー名",
 					},
 				},
