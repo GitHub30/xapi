@@ -52,6 +52,7 @@ const openapi = fromHono(app, {
 		info: {
 			title: "XServer API (非公式)",
 			version: "1.0.0",
+			description: "XServer Console (非公式) https://github30.github.io/xconsole/",
 		},
 		servers: [
 			{
