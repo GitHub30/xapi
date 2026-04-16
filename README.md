@@ -1,4 +1,4 @@
-# OpenAPI for XServer API(非公式)
+# OpenAPI for XServer API (非公式)
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/GitHub30/xapi)
 
