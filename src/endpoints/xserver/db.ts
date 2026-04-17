@@ -195,7 +195,7 @@ export class DbUserCreate extends XServerMock {
 					name_suffix: z
 						.string()
 						.describe("ユーザー名のサフィックス"),
-					password: z.string().min(6).describe("パスワード"),
+					password: z.string().min(8).describe("パスワード"),
 					memo: z.string().optional().describe("メモ"),
 				}),
 			),

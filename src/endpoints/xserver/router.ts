@@ -1,6 +1,8 @@
 import { Hono } from "hono";
 import { fromHono } from "chanfana";
 
+// APIキー情報
+import { MeGet } from "./me";
 // サーバー情報
 import { ServerInfoGet, ServerInfoUsageGet } from "./serverInfo";
 // Cron設定

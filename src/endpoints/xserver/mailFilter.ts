@@ -105,16 +105,10 @@ export class MailFilterCreate extends XServerMock {
 									.string()
 									.describe("マッチさせるキーワード"),
 								field: z
-									.enum([
-										"subject",
-										"from",
-										"to",
-										"body",
-										"header",
-									])
+									.string()
 									.describe("対象フィールド"),
 								match_type: z
-									.enum(["contain", "match", "start_from"])
+									.string()
 									.describe("一致条件"),
 							}),
 						)
@@ -122,19 +116,14 @@ export class MailFilterCreate extends XServerMock {
 						.describe("条件の配列"),
 					action: z.object({
 						type: z
-							.enum([
-								"mail_address",
-								"spam_folder",
-								"trash",
-								"delete",
-							])
+							.string()
 							.describe("転送先種別"),
 						target: z
 							.string()
 							.optional()
 							.describe("転送先メールアドレス"),
 						method: z
-							.enum(["move", "copy"])
+							.string()
 							.describe("処理方法"),
 					}),
 				}),

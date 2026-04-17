@@ -26,7 +26,7 @@ export class CronList extends XServerMock {
 								enabled: z.boolean(),
 							}),
 						),
-						notification_email: z.string(),
+						notification_email: z.string().nullable(),
 					}),
 				),
 			},

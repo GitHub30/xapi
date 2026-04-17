@@ -220,7 +220,7 @@ export class DomainReset extends XServerMock {
 			body: contentJson(
 				z.object({
 					type: z
-						.enum(["all", "web", "other"])
+						.string()
 						.describe(
 							"リセット種別（all: 全初期化 / web: Web領域のみ / other: Web以外）",
 						),

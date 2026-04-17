@@ -92,7 +92,7 @@ export class MailCreate extends XServerMock {
 			body: contentJson(
 				z.object({
 					mail_address: z.string().describe("メールアドレス"),
-					password: z.string().min(6).describe("パスワード"),
+					password: z.string().min(8).describe("パスワード"),
 					quota_mb: z
 						.number()
 						.int()

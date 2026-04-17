@@ -26,9 +26,9 @@ export class SslList extends XServerMock {
 							z.object({
 								id: z.number().int(),
 								common_name: z.string(),
-								type: z.enum(["letsencrypt", "option"]),
-								expires_at: z.string(),
-								status: z.enum(["active", "expired"]),
+							type: z.string(),
+							expires_at: z.string(),
+							status: z.string(),
 							}),
 						),
 					}),

@@ -30,7 +30,7 @@ export class DnsList extends XServerMock {
 								type: z.string(),
 								content: z.string(),
 								ttl: z.number().int(),
-								priority: z.number().int().nullable(),
+								priority: z.number().int(),
 							}),
 						),
 					}),
@@ -57,7 +57,7 @@ export class DnsList extends XServerMock {
 				type: row.type,
 				content: row.content,
 				ttl: row.ttl,
-				priority: row.priority ?? null,
+				priority: row.priority ?? 0,
 			})),
 		});
 	}
@@ -75,7 +75,7 @@ export class DnsCreate extends XServerMock {
 					domain: z.string().max(253).describe("ドメイン"),
 					host: z.string().max(255).describe("ホスト名（@ で apex）"),
 					type: z
-						.enum(["A", "AAAA", "CNAME", "MX", "TXT", "SRV", "CAA"])
+						.string()
 						.describe("レコードタイプ"),
 					content: z.string().describe("内容"),
 					ttl: z
