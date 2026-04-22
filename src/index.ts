@@ -51,18 +51,26 @@ const openapi = fromHono(app, {
 	docs_url: null,
 	schema: {
 		info: {
-			title: "XServer API (非公式)",
+			title: "XServer/シン/スター API (非公式)",
 			version: "1.0.0",
-			description: 'XServer Console (非公式) <a href="https://github30.github.io/xconsole" target="_blank">https://github30.github.io/xconsole</a>',
+			description: 'XServer/シン/スター Console (非公式) <a href="https://github30.github.io/xconsole" target="_blank">https://github30.github.io/xconsole</a>',
 		},
 		servers: [
 			{
 				url: "https://cors.ix.workers.dev/api.xserver.ne.jp",
-				description: "XServer API 本番",
+				description: "XServer API",
+			},
+			{
+				url: "https://cors.ix.workers.dev/api.shin-server.jp",
+				description: "シンアカウント API",
+			},
+			{
+				url: "https://cors.ix.workers.dev/api.star.ne.jp",
+				description: "スターアカウント API",
 			},
 			{
 				url: "/",
-				description: "XServer API モックサーバー",
+				description: "モックサーバー API",
 			},
 		],
 		security: [{ bearerAuth: [] }],
